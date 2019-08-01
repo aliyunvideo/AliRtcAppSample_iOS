@@ -2,7 +2,7 @@
 #import <AliRTCSdk/AliRTCSdk.h>
 
 // 用户 APP Server 登录信息
-static NSString *AppServer   =  @"https://papp.rtc.aliyuncs.com/app/v1/";   //服务器app server地址
+static NSString *AppServer   =  @"";   //服务器app server地址
 
 @interface RTCSampleUserAuthrization : NSObject
 

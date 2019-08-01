@@ -49,14 +49,6 @@
     //添加手势
     [self addGesture];
     
-    
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    
-    [super viewDidAppear:animated];
-    _tfChannel.text  = @"1232";
-
 }
 
 #pragma mark - baseSetting
@@ -147,7 +139,6 @@
     _tfChannel.clearButtonMode = UITextFieldViewModeAlways;
     _tfChannel.borderStyle = UITextBorderStyleRoundedRect;
     _tfChannel.placeholder = @"请输入频道号(3-12位数字)";
-    _tfChannel.text  = @"1232";
     _tfChannel.keyboardType  = UIKeyboardTypeNumberPad;
     _tfChannel.returnKeyType = UIReturnKeyGo;
     _tfChannel.delegate = self;

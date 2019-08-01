@@ -90,8 +90,7 @@
 - (void)startPreview{
     // 设置本地预览视频
     AliVideoCanvas *canvas   = [[AliVideoCanvas alloc] init];
-    AliRenderView *viewLocal = [[AliRenderView alloc] init];
-    viewLocal.frame = self.view.bounds;
+    AliRenderView *viewLocal = [[AliRenderView alloc] initWithFrame:self.view.bounds];
     canvas.view = viewLocal;
     canvas.renderMode = AliRtcRenderModeAuto;
     [self.view addSubview:viewLocal];
@@ -131,10 +130,6 @@
     AliRtcAuthInfo *authInfo = [RTCSampleUserAuthrization getPassportFromAppServer:self.channelName userName:userName];
     
     //加入频道
-    
-    [self.engine enableSpeakerphone:YES];
-
-    
     [self.engine joinChannel:authInfo name:userName onResult:^(NSInteger errCode) {
         //加入频道回调处理
         NSLog(@"joinChannel result: %d", (int)errCode);
@@ -180,8 +175,6 @@
     
     //销毁SDK实例
     [AliRtcEngine destroy];
-    
-    self.engine = nil;
 }
 
 #pragma mark - uicollectionview delegate & datasource

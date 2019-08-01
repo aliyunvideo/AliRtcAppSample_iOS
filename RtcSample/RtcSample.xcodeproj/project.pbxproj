@@ -24,22 +24,22 @@
 		64138828222A440900A176A7 /* RTCSampleUserAuthrization.m in Sources */ = {isa = PBXBuildFile; fileRef = 64138823222A440900A176A7 /* RTCSampleUserAuthrization.m */; };
 		6489C62F225B34A1009BC6B7 /* RTCSampleRemoteUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6489C62E225B34A1009BC6B7 /* RTCSampleRemoteUserManager.m */; };
 		64C4172B225F325000F68B3F /* RTCSampleRemoteUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C4172A225F325000F68B3F /* RTCSampleRemoteUserModel.m */; };
-		6C0095FD22EF161E009368B7 /* AliRTCSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C7C0EC22E700010097A454 /* AliRTCSdk.framework */; };
-		6C0095FE22EF161E009368B7 /* AliRTCSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73C7C0EC22E700010097A454 /* AliRTCSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6C7997FA2201D3CD004FE646 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7997F92201D3CD004FE646 /* libc++.tbd */; };
 		6E47FD2220E341CC0048A0DA /* AliBaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E47FD2020E341CC0048A0DA /* AliBaseHttpClient.m */; };
 		6E47FD2320E341CC0048A0DA /* AliRequestList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E47FD2120E341CC0048A0DA /* AliRequestList.m */; };
+		73C7C0EE22E700010097A454 /* AliRTCSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C7C0EC22E700010097A454 /* AliRTCSdk.framework */; };
 		73C7C0EF22E700010097A454 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C7C0ED22E700010097A454 /* UTDID.framework */; };
+		73C7C0F122E700050097A454 /* AliRTCSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73C7C0EC22E700010097A454 /* AliRTCSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6CD0EFC222E9B2860045171A /* Embed Frameworks */ = {
+		6C7998022201D3DC004FE646 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6C0095FE22EF161E009368B7 /* AliRTCSdk.framework in Embed Frameworks */,
+				73C7C0F122E700050097A454 /* AliRTCSdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,13 +89,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C7C0EE22E700010097A454 /* AliRTCSdk.framework in Frameworks */,
 				6C7997FA2201D3CD004FE646 /* libc++.tbd in Frameworks */,
 				0D94968220986A34005FBD53 /* VideoToolbox.framework in Frameworks */,
 				0D94968020986A20005FBD53 /* AudioToolbox.framework in Frameworks */,
 				0D94967A209869DF005FBD53 /* libresolv.tbd in Frameworks */,
 				0D949678209869C1005FBD53 /* libz.tbd in Frameworks */,
 				0D949676209869AD005FBD53 /* AVFoundation.framework in Frameworks */,
-				6C0095FD22EF161E009368B7 /* AliRTCSdk.framework in Frameworks */,
 				0D94967420986996005FBD53 /* CoreMedia.framework in Frameworks */,
 				73C7C0EF22E700010097A454 /* UTDID.framework in Frameworks */,
 			);
@@ -196,7 +196,7 @@
 				0D949644209860C0005FBD53 /* Sources */,
 				0D949645209860C0005FBD53 /* Frameworks */,
 				0D949646209860C0005FBD53 /* Resources */,
-				6CD0EFC222E9B2860045171A /* Embed Frameworks */,
+				6C7998022201D3DC004FE646 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,7 +406,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TJV6VLRJLL;
 				ENABLE_BITCODE = NO;
@@ -423,7 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Alibaba.RtcSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6a23a3d4-6da4-4262-b62b-74f89d8f77e8";
-				PROVISIONING_PROFILE_SPECIFIER = alivc_dev_299;
+				PROVISIONING_PROFILE_SPECIFIER = alivc_dis_299;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -432,7 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TJV6VLRJLL;
 				ENABLE_BITCODE = NO;
@@ -440,7 +440,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/RtcSample/AliRTCSdk",
-					"$(PROJECT_DIR)/AliRTCSdk",
 				);
 				INFOPLIST_FILE = RtcSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -449,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Alibaba.RtcSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6a23a3d4-6da4-4262-b62b-74f89d8f77e8";
-				PROVISIONING_PROFILE_SPECIFIER = alivc_dev_299;
+				PROVISIONING_PROFILE_SPECIFIER = alivc_dis_299;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
