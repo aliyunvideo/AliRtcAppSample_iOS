@@ -22,22 +22,24 @@
 		64138826222A440900A176A7 /* UIViewController+RTCSampleAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 64138821222A440900A176A7 /* UIViewController+RTCSampleAlert.m */; };
 		64138827222A440900A176A7 /* RTCSampleChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64138822222A440900A176A7 /* RTCSampleChannelViewController.m */; };
 		64138828222A440900A176A7 /* RTCSampleUserAuthrization.m in Sources */ = {isa = PBXBuildFile; fileRef = 64138823222A440900A176A7 /* RTCSampleUserAuthrization.m */; };
+		6489C62F225B34A1009BC6B7 /* RTCSampleRemoteUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6489C62E225B34A1009BC6B7 /* RTCSampleRemoteUserManager.m */; };
+		64C4172B225F325000F68B3F /* RTCSampleRemoteUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C4172A225F325000F68B3F /* RTCSampleRemoteUserModel.m */; };
+		6C0095FD22EF161E009368B7 /* AliRTCSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C7C0EC22E700010097A454 /* AliRTCSdk.framework */; };
+		6C0095FE22EF161E009368B7 /* AliRTCSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73C7C0EC22E700010097A454 /* AliRTCSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6C7997FA2201D3CD004FE646 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7997F92201D3CD004FE646 /* libc++.tbd */; };
-		6C7997FF2201D3D7004FE646 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7997FD2201D3D6004FE646 /* UTDID.framework */; };
-		6C7998002201D3DC004FE646 /* AliRTCSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7997FC2201D3D6004FE646 /* AliRTCSdk.framework */; };
-		6C7998012201D3DC004FE646 /* AliRTCSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7997FC2201D3D6004FE646 /* AliRTCSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E47FD2220E341CC0048A0DA /* AliBaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E47FD2020E341CC0048A0DA /* AliBaseHttpClient.m */; };
 		6E47FD2320E341CC0048A0DA /* AliRequestList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E47FD2120E341CC0048A0DA /* AliRequestList.m */; };
+		73C7C0EF22E700010097A454 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C7C0ED22E700010097A454 /* UTDID.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6C7998022201D3DC004FE646 /* Embed Frameworks */ = {
+		6CD0EFC222E9B2860045171A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6C7998012201D3DC004FE646 /* AliRTCSdk.framework in Embed Frameworks */,
+				6C0095FE22EF161E009368B7 /* AliRTCSdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,13 +71,17 @@
 		64138822222A440900A176A7 /* RTCSampleChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCSampleChannelViewController.m; sourceTree = "<group>"; };
 		64138823222A440900A176A7 /* RTCSampleUserAuthrization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCSampleUserAuthrization.m; sourceTree = "<group>"; };
 		64138824222A440900A176A7 /* RTCSampleChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCSampleChatViewController.h; sourceTree = "<group>"; };
+		6489C62D225B34A1009BC6B7 /* RTCSampleRemoteUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCSampleRemoteUserManager.h; sourceTree = "<group>"; };
+		6489C62E225B34A1009BC6B7 /* RTCSampleRemoteUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCSampleRemoteUserManager.m; sourceTree = "<group>"; };
+		64C41729225F325000F68B3F /* RTCSampleRemoteUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCSampleRemoteUserModel.h; sourceTree = "<group>"; };
+		64C4172A225F325000F68B3F /* RTCSampleRemoteUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCSampleRemoteUserModel.m; sourceTree = "<group>"; };
 		6C7997F92201D3CD004FE646 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		6C7997FC2201D3D6004FE646 /* AliRTCSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliRTCSdk.framework; sourceTree = "<group>"; };
-		6C7997FD2201D3D6004FE646 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
 		6E47FD1E20E341CC0048A0DA /* AliBaseHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliBaseHttpClient.h; sourceTree = "<group>"; };
 		6E47FD1F20E341CC0048A0DA /* AliRequestList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliRequestList.h; sourceTree = "<group>"; };
 		6E47FD2020E341CC0048A0DA /* AliBaseHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliBaseHttpClient.m; sourceTree = "<group>"; };
 		6E47FD2120E341CC0048A0DA /* AliRequestList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliRequestList.m; sourceTree = "<group>"; };
+		73C7C0EC22E700010097A454 /* AliRTCSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliRTCSdk.framework; sourceTree = "<group>"; };
+		73C7C0ED22E700010097A454 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +95,9 @@
 				0D94967A209869DF005FBD53 /* libresolv.tbd in Frameworks */,
 				0D949678209869C1005FBD53 /* libz.tbd in Frameworks */,
 				0D949676209869AD005FBD53 /* AVFoundation.framework in Frameworks */,
+				6C0095FD22EF161E009368B7 /* AliRTCSdk.framework in Frameworks */,
 				0D94967420986996005FBD53 /* CoreMedia.framework in Frameworks */,
-				6C7998002201D3DC004FE646 /* AliRTCSdk.framework in Frameworks */,
-				6C7997FF2201D3D7004FE646 /* UTDID.framework in Frameworks */,
+				73C7C0EF22E700010097A454 /* UTDID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +107,7 @@
 		0D94963F209860C0005FBD53 = {
 			isa = PBXGroup;
 			children = (
-				6C7997FB2201D3D6004FE646 /* AliRTCSdk */,
+				73C7C0EB22E700010097A454 /* AliRTCSdk */,
 				0D94966720986754005FBD53 /* Http */,
 				0D94964A209860C0005FBD53 /* RtcSample */,
 				0D949649209860C0005FBD53 /* Products */,
@@ -120,21 +126,25 @@
 		0D94964A209860C0005FBD53 /* RtcSample */ = {
 			isa = PBXGroup;
 			children = (
+				0D94964B209860C0005FBD53 /* AppDelegate.h */,
+				0D94964C209860C0005FBD53 /* AppDelegate.m */,
+				0D949654209860C0005FBD53 /* Assets.xcassets */,
+				0D949659209860C0005FBD53 /* Info.plist */,
+				0D949656209860C0005FBD53 /* LaunchScreen.storyboard */,
+				0D94965A209860C0005FBD53 /* main.m */,
+				0D949651209860C0005FBD53 /* Main.storyboard */,
 				6413881D222A440800A176A7 /* RTCSampleChannelViewController.h */,
 				64138822222A440900A176A7 /* RTCSampleChannelViewController.m */,
 				64138824222A440900A176A7 /* RTCSampleChatViewController.h */,
 				6413881E222A440800A176A7 /* RTCSampleChatViewController.m */,
+				6489C62D225B34A1009BC6B7 /* RTCSampleRemoteUserManager.h */,
+				6489C62E225B34A1009BC6B7 /* RTCSampleRemoteUserManager.m */,
+				64C41729225F325000F68B3F /* RTCSampleRemoteUserModel.h */,
+				64C4172A225F325000F68B3F /* RTCSampleRemoteUserModel.m */,
 				6413881F222A440800A176A7 /* RTCSampleUserAuthrization.h */,
 				64138823222A440900A176A7 /* RTCSampleUserAuthrization.m */,
 				64138820222A440900A176A7 /* UIViewController+RTCSampleAlert.h */,
 				64138821222A440900A176A7 /* UIViewController+RTCSampleAlert.m */,
-				0D94964B209860C0005FBD53 /* AppDelegate.h */,
-				0D94964C209860C0005FBD53 /* AppDelegate.m */,
-				0D949651209860C0005FBD53 /* Main.storyboard */,
-				0D949654209860C0005FBD53 /* Assets.xcassets */,
-				0D949656209860C0005FBD53 /* LaunchScreen.storyboard */,
-				0D949659209860C0005FBD53 /* Info.plist */,
-				0D94965A209860C0005FBD53 /* main.m */,
 			);
 			path = RtcSample;
 			sourceTree = "<group>";
@@ -167,14 +177,13 @@
 			path = RtcSample/Http;
 			sourceTree = "<group>";
 		};
-		6C7997FB2201D3D6004FE646 /* AliRTCSdk */ = {
+		73C7C0EB22E700010097A454 /* AliRTCSdk */ = {
 			isa = PBXGroup;
 			children = (
-				6C7997FC2201D3D6004FE646 /* AliRTCSdk.framework */,
-				6C7997FD2201D3D6004FE646 /* UTDID.framework */,
+				73C7C0EC22E700010097A454 /* AliRTCSdk.framework */,
+				73C7C0ED22E700010097A454 /* UTDID.framework */,
 			);
-			name = AliRTCSdk;
-			path = RtcSample/AliRTCSdk;
+			path = AliRTCSdk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +196,7 @@
 				0D949644209860C0005FBD53 /* Sources */,
 				0D949645209860C0005FBD53 /* Frameworks */,
 				0D949646209860C0005FBD53 /* Resources */,
-				6C7998022201D3DC004FE646 /* Embed Frameworks */,
+				6CD0EFC222E9B2860045171A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,10 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				64138827222A440900A176A7 /* RTCSampleChannelViewController.m in Sources */,
+				6489C62F225B34A1009BC6B7 /* RTCSampleRemoteUserManager.m in Sources */,
 				0D94965B209860C0005FBD53 /* main.m in Sources */,
 				64138828222A440900A176A7 /* RTCSampleUserAuthrization.m in Sources */,
 				64138826222A440900A176A7 /* UIViewController+RTCSampleAlert.m in Sources */,
 				6E47FD2220E341CC0048A0DA /* AliBaseHttpClient.m in Sources */,
+				64C4172B225F325000F68B3F /* RTCSampleRemoteUserModel.m in Sources */,
 				6E47FD2320E341CC0048A0DA /* AliRequestList.m in Sources */,
 				0D94964D209860C0005FBD53 /* AppDelegate.m in Sources */,
 				64138825222A440900A176A7 /* RTCSampleChatViewController.m in Sources */,
@@ -395,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TJV6VLRJLL;
 				ENABLE_BITCODE = NO;
@@ -402,6 +414,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/RtcSample/AliRTCSdk",
+					"$(PROJECT_DIR)/AliRTCSdk",
 				);
 				INFOPLIST_FILE = RtcSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -410,7 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Alibaba.RtcSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6a23a3d4-6da4-4262-b62b-74f89d8f77e8";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS-Dev-profile";
+				PROVISIONING_PROFILE_SPECIFIER = alivc_dev_299;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -419,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TJV6VLRJLL;
 				ENABLE_BITCODE = NO;
@@ -426,6 +440,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/RtcSample/AliRTCSdk",
+					"$(PROJECT_DIR)/AliRTCSdk",
 				);
 				INFOPLIST_FILE = RtcSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -434,7 +449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Alibaba.RtcSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6a23a3d4-6da4-4262-b62b-74f89d8f77e8";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS-Dev-profile";
+				PROVISIONING_PROFILE_SPECIFIER = alivc_dev_299;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
