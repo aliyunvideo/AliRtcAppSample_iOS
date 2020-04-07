@@ -18,19 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, copy) NSString *channelName;
 
-/**
- @brief 音频采集开关
- */
-@property(nonatomic, assign) BOOL audioCapture;
-
-/**
- @brief 音频播放开关
- */
-@property(nonatomic, assign) BOOL audioPlayer;
-
 @end
 
-NS_ASSUME_NONNULL_END
+
 
 @interface RTCRemoterUserView : UICollectionViewCell
 
@@ -46,10 +36,6 @@ NS_ASSUME_NONNULL_END
  */
 @property(nonatomic,copy) void(^switchblock)(BOOL);
 
-/**
- @brief mediaInfo获取媒体流信息点击事件回调
- */
-@property(nonatomic,copy) void(^mediaInfoblock)();
 
 /**
  @brief 灰色底View
@@ -68,6 +54,7 @@ NS_ASSUME_NONNULL_END
 
 - (void)onCameraMirrorClicked:(UISwitch *)switchView;
 
-- (void)getMediaInfoClicked:(UIButton *)button;
 
 @end
+
+NS_ASSUME_NONNULL_END
